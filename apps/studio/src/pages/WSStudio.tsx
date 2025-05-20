@@ -5,9 +5,12 @@ import ImageSlider from "./components/ImageSlider";
 import { ReactSVG } from "react-svg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { usePageTranslation } from "@/i18n";
 
 
 export default function WSStudio(){
+
+  const t = usePageTranslation();
 
   const isMobile = () => window.innerWidth < 1024;
 
@@ -73,7 +76,7 @@ export default function WSStudio(){
           </div>
           <div className="text">
             <p>WeShre Studio is where ideas go digital.</p>
-            <p>We help you build websites that don’t just look great — they work great too. Whether you need a landing page, an e-commerce platform, or something totally custom, our team handles everything from design to launch. Clean code, smart UX, and real results — all in one place.</p>
+            <p>{t('description')}</p>
           </div>
         </section>
 
@@ -85,10 +88,7 @@ export default function WSStudio(){
             <h3>Our Philosophy</h3>
           </div>
           <div className={`s-philosophy__text ${isVisible ? 'animate-right-to-left' : 'opacity-0'} backdrop-blur-md`}>
-            <p>WeShre Studio was born inside WeShre, our own social event platform — so we know what it’s like to build something from the ground up.
-            We’re not just service providers, we’re creators too. That’s why we understand your challenges, speak your language, and design with your goals in mind.
-            We build with the same care and energy we put into our own product — because we’ve been in your shoes.
-            </p>
+            <p>{t('section.1')}</p>
           </div>
         </section>
 
@@ -105,7 +105,7 @@ export default function WSStudio(){
                 <h3>Our<br></br>Capacities</h3>
               </div>
               <div className={`s-capacity__text ${isVisible2 ? 'animate-from-bottom' : 'opacity-0'}`}>
-                <p>At WeShre Studio, our team brings together creative UI/UX designers and skilled front-end and back-end developers. From user journeys to database architecture, we cover the full spectrum — designing intuitive interfaces, building robust systems, and delivering smooth, high-performance websites tailored to your needs.</p>
+                <p>{t('section.2')}</p>
               </div>
             </div>
 

@@ -2,6 +2,7 @@ import { ReactSVG } from "react-svg"
 import { Link} from "react-router-dom";
 import { useScrollToAnchor } from "@repo/hooks/useScrollToAnchor";
 import { useState, useEffect } from "react";
+import i18n from "@/i18n";
 
 interface WSSHeaderProps {
   isMenuOpen: boolean;
@@ -12,6 +13,13 @@ export default function WSSHeader({ isMenuOpen, setIsMenuOpen }: WSSHeaderProps)
   const { navigateToAnchor, scrollToElement } = useScrollToAnchor();
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [language, setLanguage] = useState<'en' | 'fr'>('en');
+
+  const switchLanguage = () => {
+    const newLang = language === 'en' ? 'fr' : 'en';
+    setLanguage(newLang);
+    i18n.changeLanguage(newLang);
+  };
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -52,7 +60,6 @@ export default function WSSHeader({ isMenuOpen, setIsMenuOpen }: WSSHeaderProps)
         </Link>
       </div>
 
-
       <nav className={`${isMenuOpen ? 'menu-open h-screen' : ''}`}>
 
         <button className="btn-header btn-close lg:hidden ml-auto mt-25 mb-60" onClick={() => {closeMenu();}}>
@@ -69,6 +76,14 @@ export default function WSSHeader({ isMenuOpen, setIsMenuOpen }: WSSHeaderProps)
         </button>
 
         <Link className="btn-header" onClick={closeMenu} to="https://weshre.com">WeShre</Link>
+
+        <button
+          className="btn-header"
+          onClick={switchLanguage}
+          aria-label="Switch language"
+        >
+          {language === 'en' ? 'EN' : 'FR'}
+        </button>
 
         <button
           className="btn-studio w-fit ml-auto mt-60 lg:!hidden"

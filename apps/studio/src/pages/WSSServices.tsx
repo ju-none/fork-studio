@@ -2,8 +2,11 @@ import WSSContact from "./components/WSSContact";
 import { ReactSVG } from "react-svg";
 import { useScrollAnimation } from "@repo/hooks/useScrollAnimation";
 import { Helmet } from "react-helmet-async";
+import { usePageTranslation } from "@/i18n";
 
 export default function WSSServices(){
+
+  const t = usePageTranslation();
 
   const { ref, isVisible } = useScrollAnimation<HTMLDivElement>({
     threshold: 0.5,
@@ -41,7 +44,7 @@ export default function WSSServices(){
               <span className="animate-cascade-opacity animate-cascade-opacity--2">Launch.</span></h2>
               <h2 className="grow animate-cascade-opacity animate-cascade-opacity--3">Grow <ReactSVG src={`/svg/grow-arrow.svg`} /></h2>
             </div>
-            <p>WeShre Studio is your creative tech partner — from the first sketch to the final line of code. We offer a full range of services to help you launch fast, scale smart, and stand out online.</p>
+            <p>{t('description')}</p>
           </section>
 
           <section className="s-whatwedo !p-0">
