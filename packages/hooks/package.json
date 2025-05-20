@@ -1,0 +1,11 @@
+{
+    "name": "@repo/hooks",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "exports": {
+        "./useScrollAnimation": "./useScrollAnimation.tsx",
+        "./useScrollToAnchor": "./useScrollToAnchor.tsx",
+        "./ScrollToTop": "./ScrollToTop.tsx"
+    }
+}
