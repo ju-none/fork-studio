@@ -76,7 +76,7 @@ export default function WSStudio(){
           </div>
           <div className="text">
             <p>WeShre Studio is where ideas go digital.</p>
-            <p>{t('description')}</p>
+            <p className="editable" data-key="description">{t('description')}</p>
           </div>
         </section>
 
@@ -88,7 +88,7 @@ export default function WSStudio(){
             <h3>Our Philosophy</h3>
           </div>
           <div className={`s-philosophy__text ${isVisible ? 'animate-right-to-left' : 'opacity-0'} backdrop-blur-md`}>
-            <p>{t('section.1')}</p>
+            <p className="editable" data-key="section.1">{t('section.1')}</p>
           </div>
         </section>
 
@@ -105,7 +105,7 @@ export default function WSStudio(){
                 <h3>Our<br></br>Capacities</h3>
               </div>
               <div className={`s-capacity__text ${isVisible2 ? 'animate-from-bottom' : 'opacity-0'}`}>
-                <p>{t('section.2')}</p>
+                <p className="editable" data-key="section.2">{t('section.2')}</p>
               </div>
             </div>
 

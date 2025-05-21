@@ -44,7 +44,7 @@ export default function WSSServices(){
               <span className="animate-cascade-opacity animate-cascade-opacity--2">Launch.</span></h2>
               <h2 className="grow animate-cascade-opacity animate-cascade-opacity--3">Grow <ReactSVG src={`svg/grow-arrow.svg`} /></h2>
             </div>
-            <p>{t('description')}</p>
+            <p className="editable" data-key="description">{t('description')}</p>
           </section>
 
           <section className="s-whatwedo !p-0">
