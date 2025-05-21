@@ -170,7 +170,7 @@ export default function WSStudio(){
             <Link
               className="btn-studio w-fit mx-auto mb-80" to="services">
               <span>See our services</span>
-              <ReactSVG src="/svg/double-chevron-right.svg" />
+              <ReactSVG src="svg/double-chevron-right.svg" />
             </Link>
           <h3 id="about-us">Meet the team.</h3>
         </section>

@@ -56,7 +56,7 @@ export default function WSSContact() {
             But if you're reaching out about a new project, go ahead and fill out the form and we'll get back to you with details on how we can bring your idea to life.
           </p>
           <a href="mailto:studio@weshre.com">
-            <ReactSVG src="/svg/big-arrow.svg" />
+            <ReactSVG src="svg/big-arrow.svg" />
             studio@weshre.com
           </a>
         </div>
@@ -137,7 +137,7 @@ export default function WSSContact() {
             
             <button type="submit"className="btn-studio ml-auto mt-70" disabled={isSubmitting}>
               <span>{isSubmitting ? 'Sending...' : 'Submit'}</span>
-              <ReactSVG src="/svg/double-chevron-right.svg" />
+              <ReactSVG src="svg/double-chevron-right.svg" />
             </button>
           </form>
         </div>

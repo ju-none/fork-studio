@@ -55,7 +55,7 @@ export default function WSSHeader({ isMenuOpen, setIsMenuOpen }: WSSHeaderProps)
 
       <div className="header-left !z-[4]">
         <Link to="/" className="logo m-0">
-          <ReactSVG src="/svg/logo.svg" />
+          <ReactSVG src="svg/logo.svg" />
           <h1>WeShre Studio</h1>
         </Link>
       </div>
@@ -63,7 +63,7 @@ export default function WSSHeader({ isMenuOpen, setIsMenuOpen }: WSSHeaderProps)
       <nav className={`${isMenuOpen ? 'menu-open h-screen' : ''}`}>
 
         <button className="btn-header btn-close lg:hidden ml-auto mt-25 mb-60" onClick={() => {closeMenu();}}>
-          <ReactSVG src="/svg/closeX.svg" />
+          <ReactSVG src="svg/closeX.svg" />
         </button>
 
         <Link className="btn-header" onClick={closeMenu} to="/services/">Our services</Link>
@@ -91,7 +91,7 @@ export default function WSSHeader({ isMenuOpen, setIsMenuOpen }: WSSHeaderProps)
             scrollToElement('contact', { offset: 40 });
             closeMenu();
           }}>
-          <span>Let's discuss</span><ReactSVG src="/svg/double-chevron-right.svg" />
+          <span>Let's discuss</span><ReactSVG src="svg/double-chevron-right.svg" />
         </button>
 
       </nav>
@@ -102,12 +102,12 @@ export default function WSSHeader({ isMenuOpen, setIsMenuOpen }: WSSHeaderProps)
           className="btn-studio !hidden lg:!flex"
           onClick={() => scrollToElement('contact', { offset: 40 })}>
           <span>Let's discuss</span>
-          <ReactSVG src="/svg/double-chevron-right.svg" />
+          <ReactSVG src="svg/double-chevron-right.svg" />
         </button>
         <button
           className="lg:hidden ml-auto btn-burger"
           onClick={toggleMenu}>
-          <ReactSVG src="/svg/burger.svg" />
+          <ReactSVG src="svg/burger.svg" />
         </button>
       </div>
 
