@@ -9,7 +9,7 @@
     "preview": "turbo run preview",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
-    "deploy": "ts-node scripts/deploy.ts",
+    "deploy": "yarn build && gh-pages -d apps/studio/dist",
     "clean": "rm -rf apps/**/dist && rm -rf packages/**/dist",
     "clean:all": "yarn clean && rm -rf node_modules && rm -rf yarn.lock && rm -rf apps/**/node_modules && rm -rf packages/**/node_modules && apps/**/.turbo"
   },

@@ -3,7 +3,7 @@ import path from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: '/',
+  base: '/fork-studio/',
   plugins: [react()],
   build: {
     target: "esnext",
@@ -18,6 +18,6 @@ export default defineConfig({
     "process.env": {},
   },
   server: {
-    port: 5174,
+    port: 5173,
   }
 });
