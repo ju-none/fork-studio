@@ -15,11 +15,14 @@ function App() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      console.log('Application chargée - prête pour le prérendu');
       document.dispatchEvent(new Event('app-rendered'));
     }, 1000); 
     
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('language', 'en');
   }, []);
   return (
         <BrowserRouter basename={import.meta.env.BASE_URL}>

@@ -18,6 +18,7 @@ export default function WSSHeader({ isMenuOpen, setIsMenuOpen }: WSSHeaderProps)
   const switchLanguage = () => {
     const newLang = language === 'en' ? 'fr' : 'en';
     setLanguage(newLang);
+    localStorage.setItem('language', newLang);
     i18n.changeLanguage(newLang);
   };
   
