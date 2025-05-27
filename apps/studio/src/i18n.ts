@@ -40,7 +40,6 @@ export function switchLanguage(lang: string) {
 export function usePageTranslation() {
   const location = useLocation();
   const pathSegments = location.pathname.split("/").filter(Boolean);
-  console.log(pathSegments)
   const page = pathSegments.length > 0 ? pathSegments[0] : "home";
   const { t } = useTranslation(page);
 
