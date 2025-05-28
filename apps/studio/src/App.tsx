@@ -9,6 +9,7 @@ import WSSServices from './pages/WSSServices';
 import Cookies from './pages/Cookies';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import i18n from './i18n';
 
 
 function App() {
@@ -19,6 +20,12 @@ function App() {
     }, 1000); 
     
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if(i18n.language != localStorage.getItem('language')) {
+      i18n.changeLanguage(localStorage.getItem('language') || 'en');
+    }
   }, []);
 
   return (
