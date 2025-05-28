@@ -16,7 +16,6 @@ for (const [path, mod] of Object.entries(files)) {
   if (!languages.includes(locale)) languages.push(locale);
   messages[locale][page.toLowerCase()] = (mod as any).default;
 }
-console.log(messages)
 const namespaces = Object.values(files)
   .map((_, i) => Object.keys(messages[languages[0]] || {})[i])
   .filter(Boolean);
@@ -28,14 +27,6 @@ i18n.use(initReactI18next).init({
   defaultNS: "home",
   interpolation: { escapeValue: false },
 });
-
-export function switchLanguage(lang: string) {
-  if (languages.includes(lang)) {
-    i18n.changeLanguage(lang);
-  } else {
-    console.warn(`Language ${lang} is not supported.`);
-  }
-}
 
 export function usePageTranslation() {
   const location = useLocation();
