@@ -22,7 +22,6 @@ const namespaces = Object.values(files)
 
 i18n.use(initReactI18next).init({
   resources: messages,
-  lng: "en",
   ns: namespaces,
   defaultNS: "home",
   interpolation: { escapeValue: false },
