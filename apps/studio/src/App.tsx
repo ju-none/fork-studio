@@ -21,9 +21,6 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem('language', 'en');
-  }, []);
   return (
         <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
