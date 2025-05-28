@@ -42,7 +42,7 @@ export default function WSSHeader({ isMenuOpen, setIsMenuOpen }: WSSHeaderProps)
     }
 
     return () => window.removeEventListener('storage', handleStorage);
-  }, [language]);
+  }, []);
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
