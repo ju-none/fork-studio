@@ -13,14 +13,36 @@ export default function WSSHeader({ isMenuOpen, setIsMenuOpen }: WSSHeaderProps)
   const { navigateToAnchor, scrollToElement } = useScrollToAnchor();
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const [language, setLanguage] = useState<'en' | 'fr'>('en');
+  const [language, setLanguage] = useState<'en' | 'fr'>(() => {
+    return (localStorage.getItem('language') as 'en' | 'fr') || 'en';
+  });
+
+  const setLang = (lang: 'en' | 'fr') => {
+    setLanguage(lang);
+    i18n.changeLanguage(lang);
+  };
 
   const switchLanguage = () => {
     const newLang = language === 'en' ? 'fr' : 'en';
-    setLanguage(newLang);
     localStorage.setItem('language', newLang);
-    i18n.changeLanguage(newLang);
+    setLang(newLang);
   };
+
+  useEffect(() => {
+    const handleStorage = (e: StorageEvent) => {
+      if (e.key === 'language' && (e.newValue === 'en' || e.newValue === 'fr')) {
+        setLang(e.newValue);
+      }
+    };
+    window.addEventListener('storage', handleStorage);
+
+  const storedLang = localStorage.getItem('language');
+    if (storedLang && storedLang !== language && (storedLang === 'en' || storedLang === 'fr')) {
+      setLang(storedLang);
+    }
+
+    return () => window.removeEventListener('storage', handleStorage);
+  }, [language]);
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
