@@ -1,0 +1,39 @@
+{
+    "helmet": "WeShre Studio: We code - You grow",
+    "title": "WeShre Studio is where ideas go digital.",
+    "description": "We help you build websites that don’t just look great — they work great too. Whether you need a landing page, an e-commerce platform, or something totally custom, our team handles everything from design to launch. Clean code, smart UX, and real results — all in one place.",
+    "philosophy": {
+      "title": "Our Philosophy",
+      "text": "WeShre Studio was born inside WeShre, our own social event platform — so we know what it’s like to build something from the ground up. We’re not just service providers, we’re creators too. That’s why we understand your challenges, speak your language, and design with your goals in mind. We build with the same care and energy we put into our own product — because we’ve been in your shoes."
+    },
+    "capacities": {
+      "title": "Our\nCapacities",
+      "text": "At WeShre Studio, our team brings together creative UI/UX designers and skilled front-end and back-end developers. From user journeys to database architecture, we cover the full spectrum — designing intuitive interfaces, building robust systems, and delivering smooth, high-performance websites tailored to your needs."
+    },
+    "work_plan": {
+        "title": "How we work.",
+        "description": "We know how fast things move when you're building something big. Our process is designed to keep up, adapt, and deliver real value — fast",
+        "steps": [
+            {
+                "title": "Think&nbsp;together",
+                "description": "We start with a discovery call/meeting to understand your vision, goals, and challenges. No fluff — just clarity."
+            },
+            {
+                "title": "Design&nbsp;it",
+                "description": "We turn your ideas into wireframes and visual concepts, fast. You’ll get early prototypes to test and iterate before a single line of code is written."
+            },
+            {
+                "title": "Built&nbsp;it",
+                "description": "We build in focused, weekly sprints. You get progress updates, live previews, and flexibility to adjust priorities on the fly."
+            },
+            {
+                "title": "Launch&nbsp;it",
+                "description": "Once everything is tested and polished, we handle deployment and support you through a smooth launch."
+            }
+        ]
+    },
+    "meet": "Meet the team!",
+    "button": {
+        "services": "See our services"
+    }
+}

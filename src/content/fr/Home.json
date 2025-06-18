@@ -1,0 +1,39 @@
+{
+    "helmet": "WeShre Studio: We code - You grow",
+    "title": "WeShre Studio, là où les idées deviennent digitales.",
+    "description": "Nous concevons des sites web qui ne se contentent pas d’être beaux — ils sont aussi performants. Que vous ayez besoin d’une landing page, d’une plateforme e-commerce ou d’un projet 100 % sur mesure, notre équipe prend en charge chaque étape : du design au lancement. Code propre, UX intelligente et résultats concrets — tout est réuni au même endroit.",
+    "philosophy": {
+      "title": "Notre Philosophie",
+      "text": "WeShre Studio est né du projet WeShre, notre plateforme sociale événementiel — alors on sait ce que c’est que de tout construire depuis zéro. Nous ne sommes pas seulement des prestataires de service : nous sommes aussi des créateurs. C’est pour ça qu’on comprend vos défis, qu’on parle votre langage, et qu’on conçoit toujours avec vos objectifs en tête. Nous développons avec la même attention, la même énergie que pour notre propre produit — parce qu’on est déjà passés par là."
+    },
+    "capacities": {
+      "title": "Notre\nExpertise",
+      "text": "Chez WeShre Studio, notre équipe réunit des designers UI/UX créatifs et des développeurs front-end et back-end expérimentés. De l’expérience utilisateur à l’architecture de base de données, nous couvrons l’ensemble du processus : conception d’interfaces intuitives, développement de systèmes robustes et livraison de sites web performants, fluides et parfaitement adaptés à vos besoins."
+    },
+    "work_plan": {
+        "title": "Notre méthodologie.",
+        "description": "On sait à quelle vitesse tout va quand on construit quelque chose de grand. C’est pourquoi notre méthode est conçue pour s’adapter rapidement, gagner du temps et livrer un maximum de valeur, sans compromis.",
+        "steps": [
+            {
+                "title": "Think&nbsp;together",
+                "description": "On commence par un échange pour comprendre votre vision, vos objectifs et vos défis. Pas de blabla — juste de la clarté."
+            },
+            {
+                "title": "Design&nbsp;it",
+                "description": "On transforme vos idées en wireframes et concepts visuels. Vous recevez un prototype pour tester et ajuster avant la moindre ligne de code."
+            },
+            {
+                "title": "Built&nbsp;it",
+                "description": "Nous travaillons par sprints. Vous avez des mises à jour régulières, des aperçus en direct, et la flexibilité de réajuster les priorités à tout moment."
+            },
+            {
+                "title": "Launch&nbsp;it",
+                "description": "Une fois tout testé et peaufiné, nous assurons le déploiement et vous accompagnons pour un lancement sans accroc."
+            }
+        ]
+    },
+    "meet": "Hello l'équipe !",
+    "button": {
+        "services": "Voir nos services"
+    }
+}

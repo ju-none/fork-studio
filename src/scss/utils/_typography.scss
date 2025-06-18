@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=block");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=block");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=fallback");
+
+@layer base {
+  :root {
+    // Default theme (dark)
+    --body-color: #191917;
+
+    --bg-color: #252323;
+    --bg-color-secondary: #3d3a3a;
+    --bg-color-transition: #585454;
+
+    --primary-color: #fff;
+    --secondary-color: #c9c8c8;
+
+    //common colors (no switch)
+    --blue-filter: brightness(0) saturate(100%) invert(64%) sepia(63%) saturate(619%) hue-rotate(173deg) brightness(99%)
+      contrast(105%);
+    --red-filter: brightness(0) saturate(100%) invert(71%) sepia(82%) saturate(5114%) hue-rotate(327deg)
+      brightness(104%) contrast(111%);
+    --orange-filter: brightness(0) saturate(100%) invert(52%) sepia(99%) saturate(887%) hue-rotate(2deg) brightness(92%)
+      contrast(97%);
+
+    --weshre-gradient-top-bottom: linear-gradient(to bottom, rgb(255, 100, 100), #ffda16);
+    --weshre-gradient-left-right: linear-gradient(to right, #32a3ff 7%, #fb99d0 46%, #fb99d0 58%, #ff0101 92%);
+    --weshre-gradient-left-right-tight: linear-gradient(to right, #32a3ff 7%, #fb99d0 45%, #ff0101 80%);
+    --weshre-gradient-right-left: linear-gradient(to right, #ff3b3b 0%, #ff3b3b 50%, #2c98fc 50%, #2c98fc 100%);
+
+    --blue-color: #55c2ff;
+    --blue-color-darken: #29aefa;
+    --red-color: #ff5555;
+    --red-color-darken: #d73333;
+
+    --plan-1: -webkit-radial-gradient(ellipse at top left, #cdff6a, #d7ff88 20%, transparent 60%),
+      -webkit-radial-gradient(ellipse at top right, #8effd7, #81fbd4 20%, transparent 60%),
+      -webkit-linear-gradient(#e8e2ff);
+    --plan-1: radial-gradient(ellipse at top left, #cdff6a, #d7ff88 20%, transparent 60%),
+      radial-gradient(ellipse at top right, #8effd7, #81fbd4 20%, transparent 60%), linear-gradient(#e8e2ff);
+
+    --plan-2: -webkit-radial-gradient(
+        circle at bottom right,
+        rgb(255, 100, 100),
+        rgb(255, 100, 100) 15%,
+        transparent 60%
+      ),
+      -webkit-radial-gradient(ellipse at bottom left, #ff83fd, #f538f2 5%, transparent 60%),
+      -webkit-linear-gradient(#ffe6df);
+    --plan-2: radial-gradient(circle at bottom right, rgb(255, 100, 100), rgb(255, 100, 100) 15%, transparent 60%),
+      radial-gradient(ellipse at bottom left, #ff83fd, #f538f2 5%, transparent 60%), linear-gradient(#ffe6df);
+
+    --plan-3: -webkit-radial-gradient(ellipse at top left, #29f9a9, #29f9a9 20%, transparent 50%),
+      -webkit-radial-gradient(ellipse at top right, #f3ff0f, #f3ff0f 20%, transparent 60%),
+      -webkit-linear-gradient(#fbffe5);
+    --plan-3: radial-gradient(ellipse at top left, #29f9a9, #29f9a9 20%, transparent 50%),
+      radial-gradient(ellipse at top right, #f3ff0f, #f3ff0f 20%, transparent 60%), linear-gradient(#fbffe5);
+
+    --plan-4: -webkit-radial-gradient(ellipse at top left, #b03eca, #b03eca 5%, transparent 50%),
+      -webkit-radial-gradient(ellipse at top right, #58dbff, #58dbff 20%, transparent 60%),
+      -webkit-linear-gradient(#d7fff2);
+    --plan-4: radial-gradient(ellipse at top left, #b03eca, #b03eca 5%, transparent 50%),
+      radial-gradient(ellipse at top right, #58dbff, #58dbff 20%, transparent 60%), linear-gradient(#d7fff2);
+
+    @apply font-montserrat;
+  }
+
+  [data-theme="light"] {
+    --body-color: #f5f5f5;
+
+    --bg-color: #fff;
+    --bg-color-secondary: #e0e0e0;
+    --bg-color-transition: #d3d3d3;
+
+    --primary-color: #252525;
+    --secondary-color: #555;
+
+    @apply font-montserrat;
+  }
+}
+
+svg:not(.svg-colored) {
+  filter: invert(1);
+}
+
+[data-theme="light"] {
+  svg:not(.svg-colored) {
+    filter: none;
+  }
+}

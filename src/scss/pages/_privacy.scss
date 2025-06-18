@@ -1,0 +1,90 @@
+.page-welcome,
+.page-studio {
+  .page-privacy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    @apply px-20 sm:px-60;
+
+    &__content {
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 60px;
+      margin-top: 40px;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      letter-spacing: normal;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-block: 30px;
+      text-indent: 20px;
+      letter-spacing: normal;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+    p:last-of-type {
+      margin-bottom: 60px;
+    }
+
+    ul {
+      margin-bottom: 20px;
+      li {
+        margin-left: 20px;
+        list-style-type: disc;
+        padding-left: 0px;
+        margin-block: 5px;
+      }
+    }
+    ol {
+      margin-bottom: 20px;
+      li {
+        margin-block: 10px;
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    a {
+      color: var(--blue-color);
+      transition: opacity 0.3s ease;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    @media (max-width: 500px) {
+      font-size: 12px;
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 14px;
+        text-indent: 10px;
+      }
+    }
+  }
+}
+
+.page-studio {
+  .page-privacy {
+    padding-top: 60px;
+    @apply sm:pt-100;
+  }
+}

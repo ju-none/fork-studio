@@ -1,0 +1,36 @@
+{
+    "helmet": "WeShre Studio: nos services",
+    "title": "WeShre Studio est votre partenaire créatif tech — du premier croquis à la dernière ligne de code. Nous proposons une gamme complète de services pour vous aider à lancer vite, grandir intelligemment, et vous démarquer en ligne.",
+    "design": {
+        "title": "Nos services.",
+        "description": "Nous créons des interfaces modernes, épurées et centrées utilisateur, qui fonctionnent. Basés sur une bonne compréhension de votre audience et de vos objectifs, nous réalisons des wireframes et maquettes responsives, intuitives et efficaces. Accessibilité et cohérence sont au cœur de notre approche, avec un design system et une charte graphique."
+    },
+    "web_dev": {
+        "title": "Service de développement Web",
+        "offer": [
+            {
+                "title": "Développement sur mesure",
+                "description": "Le développement de site web sur mesure consiste à créer une solution digitale entièrement personnalisée, pensée pour vos objectifs business et les besoins de vos utilisateurs. Plutôt que d’utiliser des modèles standards, nous construisons des sites performants et évolutifs, de A à Z — offrant une expérience utilisateur fluide qui engage, soutient votre croissance et vous différencie de la concurrence."
+            },
+            {
+                "title": "Solutions e-commerce",
+                "description": "Nous créons des boutiques en ligne rapides, sécurisées et intuitives, conçues pour augmenter vos ventes. Avec des fonctionnalités avancées comme les paiements sécurisés et la gestion intelligente des stocks, votre site offre une expérience fluide et personnalisée pour booster votre croissance."
+            },
+            {
+                "title": "Content Management System",
+                "description": "En plus de votre site, nous créons une interface d’administration dédiée qui vous donne un contrôle total sur votre contenu — sans code ni compétences techniques. Que ce soit pour modifier du texte, publier des articles, gérer des images ou éditer des produits, votre tableau de bord personnalisé s’adapte à vos besoins.Simple, intuitif et conçu pour votre flux de travail, il vous permet de garder votre site à jour sans dépendre d’un développeur."
+            },
+            {
+                "title": "Integration API",
+                "description": "Nos services d’intégration et développement d’API connectent votre site aux outils essentiels de votre business — passerelles de paiement, gestion des stocks, CRM, etc. Nous créons des API sur mesure pour un échange de données fluide et sécurisé, garantissant l’efficacité et la fluidité de vos opérations."
+            }
+        ]
+    },
+    "identity" : {
+        "description" : "Votre marque, c’est votre voix, votre promesse, et votre première impression. Nous vous aidons à construire une identité qui se démarque et crée du lien. Du logo à la stratégie complète, nous concevons des univers visuels qui reflètent votre mission, vos valeurs et votre audience. Que vous lanciez votre marque ou souhaitiez la faire évoluer, nous vous accompagnons à chaque étape — création de logo, palette de couleurs, visuels pour pitch deck et templates pour réseaux sociaux.",
+        "partner": "Nous sommes fiers de collaborer avec <a class='link' href='https://www.gdesign.be/' target='_blank' rel='noopener noreferrer'>Global design</a>, dont l’expertise en création de logos, design d’objets et production vidéo enrichit notre offre créative. Ensemble, nous créons des expériences de marque à la fois fortes visuellement et parfaitement alignées avec vos objectifs."
+    },
+    "seo" : {
+        "description": "Notre service SEO optimise la visibilité de votre site sur Google et autres moteurs de recherche. Grâce à une stratégie personnalisée — audit technique, optimisation des contenus, netlinking et SEO local — nous attirons un trafic qualifié et améliorons durablement votre positionnement. Un suivi régulier, une totale transparence et un accompagnement sur mesure font de votre présence en ligne un levier de croissance efficace."
+    }
+}

@@ -1,0 +1,11 @@
+@use "global" as *;
+@use "utils/typography" as *;
+@use "utils/misc" as *;
+@use "utils/anims" as *;
+@use "utils/forms" as *;
+
+@use "pages/privacy" as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
