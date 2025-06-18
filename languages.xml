@@ -1,4 +1,4 @@
 <languages>
-  <lang code="en" default="true"/>
-  <lang code="fr"/>
+  <lang code="en" default="true" name="English"/>
+  <lang code="fr"  name="Français"/>
 </languages>
